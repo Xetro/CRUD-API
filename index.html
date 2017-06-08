@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Basic API</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <style>
+    button {margin-bottom: 20px};
+  </style>
+</head>
+
+<body>
+    <h1>Basic CRUD API example</h1>
+
+    <input id="add-name" type="text" placeholder="name">
+    <input id="add-price" type="number" placeholder="price">
+    <input id="add-available" type="text" placeholder="available">
+    <input id="add-date" type="text" placeholder="date created">
+    <button onclick="addOne()">Add computer to DB</button>
+    <br />
+
+    <input id="del-name" type="text" placeholder="name">
+    <button onclick="deleteOne()">Delete computer</button>
+    <br />
+
+    <input id="get-name" type="text" placeholder="name">
+    <button onclick="getOne()">Get specific computer</button>
+    <br />
+
+    <button onclick="getAll()">Get all computers</button>
+
+    <div id="results">
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
