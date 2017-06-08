@@ -1,13 +1,8 @@
-// const express = require('express');
-// const app = express();
-// const mongoose = require('mongoose');
-
 import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import mongooseConf from './mongoose.config.js';
 import Computer from './computer.model';
-// import path from 'path';
 
 let app = express();
 
@@ -45,7 +40,6 @@ app.route('/product')
             res.send("Order Created \n" + computer);
         });
     })
-
     .put((req, res) => {
         console.log("Nothing here yet");
     });

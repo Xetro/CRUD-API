@@ -27,7 +27,7 @@ export default (mongoose) => {
 
   process.on('SIGINT', gracefulExit).on('SIGTERM', gracefulExit);
 
-  mongoose.connect('mongodb://localhost/test', (error) => {
+  mongoose.connect('mongodb://localhost/testAPI', (error) => {
     if (error)
       throw error;
   });
